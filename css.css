@@ -1,0 +1,150 @@
+body {
+    background-image: url("https://i.imgur.com/U1TCVsn.gif");
+    cursor:url("https://i.imgur.com/reLjcU5.png"), auto;
+}
+p{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 100%;
+    text-indent: 75px;
+    text-shadow: 2px 2px #ff0000;
+    color: white;
+}
+a{
+  color: red;
+  text-shadow: 2px 2px #ffffff;
+  cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+}
+div.section1{
+    font-size: 125%;
+}
+div.section2{
+  visibility: hidden;
+}
+h5{
+    font-family: Tahoma, serif;
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 4px 4px #ff0000;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff4c00;
+    font-family: Tahoma, serif;
+    font-size: 150%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    cursor:url("https://i.imgur.com/reLjcU5.png"), auto;
+}
+
+li {
+    float: left;
+}
+
+li.placeholder{
+  visibility: hidden;
+}
+
+li a {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;
+    text-shadow: 2px 2px #ff0000;
+    cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+}
+
+li a:hover {
+    background-color: #ff0000;
+    cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+}
+a.john{
+  color: transparent;
+}
+a.john:hover{
+  color: black;
+  background-color: transparent;
+}
+img {
+    display: block;
+    margin: auto;
+}
+.buttonleft {
+    background-color: #FF0000;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+    float: left;
+    margin: -300px 250px;
+}
+.buttonright {
+    background-color: #FF0000;
+    border: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+    float: right;
+    margin: -300px 250px;
+}
+.lowerboi{
+    background-color: #ff9f19;
+    border: none;
+    font-family: Tahoma, serif;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+}
+div.tweets{
+  float:left;
+  width: 25%;
+  height: 1200px;
+  margin-left: 30px;
+  margin-top: 50px;
+  cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+}
+div.wiki{
+  float:right;
+  width: 70%;
+}
+div.flamingtitle{
+  width:1653px;
+  height:115px;
+  background: url('https://i.imgur.com/CeJVrb2.gif');
+}
+div.flamingtitle:hover{
+  width:1653px;
+  height:115px;
+  background: url('https://i.imgur.com/m7n8Il6.gif');
+  cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
+}
+video{
+  display: block;
+  margin: 0 auto;
+}
