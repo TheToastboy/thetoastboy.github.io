@@ -134,13 +134,13 @@ div.wiki{
   width: 70%;
 }
 div.flamingtitle{
-  width:1308px;
-  height:108px;
+  width:1600px;
+  height:150px;
   background: url('https://i.imgur.com/2bHVq24.gif');
 }
 div.flamingtitle:hover{
-  width:1308px;
-  height:108px;
+  width:1600px;
+  height:150px;
   background: url('https://i.imgur.com/oo3G0mJ.gif');
   cursor:url("https://i.imgur.com/b7JBhp3.png"), auto;
 }
