@@ -17,8 +17,31 @@
         zing-grid[loading] {
             height: 400px;
         }
-    </style>
-    <style>
+        .top-container {
+          background-color: #f1f1f1;
+          padding: 30px;
+          text-align: center;
+        }
+
+        .header {
+          padding: 10px 16px;
+          background: #555;
+          color: #f1f1f1;
+        }
+
+        .content {
+          padding: 16px;
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .sticky + .content {
+          padding-top: 102px;
+        }
         .mySlides {display:none;}
     </style>
     <script>//chart properties
@@ -157,6 +180,23 @@
 </head>
 
 <body style="background-color:#1C201C;">
+    <div class="header" id="myHeader">
+        <h2>My Header</h2>
+    </div>
+    <script>//sticky header function
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
     <div class="w3-content w3-section">
         <img class="mySlides" src="/img/slide1.jpg" style="width:100%">
         <img class="mySlides" src="/img/slide2.jpg" style="width:100%">
