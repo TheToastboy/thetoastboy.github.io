@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Merry Christmas 18!</title>
+    <title>Merry Christmas 19!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
@@ -58,6 +58,20 @@
             padding-top: 25px;
             padding-bottom: 25px;
         }
+
+        .roundbutton{
+            position:fixed;
+            background-color: transparent;
+            border: 2px solid #E71D36;
+            top: 30%;
+            left: 40%;
+            font-family: 'metamorphousregular';
+            font-size:36pt;
+            color:'black';
+            border-radius: 100%;
+            width: 300px;
+            height: 300px;
+        }
     </style>
     <script> // chart properties
         ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
@@ -71,6 +85,7 @@
                     visible: true,
                     fontSize: 72,
                     fontColor: '#FDFFFC',
+                    fontFamily: 'metamorphousregular'
                 },
                 startMonth: 9,
                 endMonth: 12,
@@ -79,7 +94,8 @@
                     values: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], // Set the month labels.
                     item: { // Use this object to style the month labels.
                         fontColor: '#FDFFFC',
-                        fontSize: 30,
+                        fontSize: 45,
+                        fontFamily: 'photographsignature',
                     },
                     outline: { // Use this object to style the borders of active and inactive months.
                       borderColor: 'white',
@@ -94,7 +110,8 @@
                     values: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                     item: {
                         fontColor: 'white',
-                        fontSize: 24
+                        fontSize: 24,
+                        fontFamily: 'metamorphousregular',
                     }
                 },
                 values: [
@@ -104,7 +121,7 @@
                     ['2019-09-21', 2, 'Went to your place, made dinner and cookies,\nwatched About A Boy'],
                     ['2019-09-24', 2, 'Got lunch on campus at McGill, went to Indigo '],
                     ['2019-09-26', 2, 'You showed up at my place unexpectedly to hang out'],
-                    ['2019-09-27', 2, 'Climate March followed by dinner at L’gros luxe, sleepover'],
+                    ['2019-09-27', 2, 'Climate March followed by dinner at L’Gros Luxe, sleepover'],
                     ['2019-09-28', 2, 'Made french toast for breakfast and then lunch at Yokato Yokabai'],
                     ['2019-10-01', 2, 'Lunch on campus at McGill, went to Redpath Museum'],
                     ['2019-10-03', 2, 'Came to my place, went through google photos'],
@@ -172,8 +189,9 @@
                         borderRadius: 10,
                         borderWidth: 2,
                         callout: true,
+                        fontFamily: 'metamorphousregular',
                         fontColor: '#2EC4B6',
-                        fontSize: 30,
+                        fontSize: 20,
                         offsetY: -10,
                         align: 'center',
                         textAlpha: 1
@@ -206,10 +224,10 @@
 
 <body style="background-color:#011627;">
     <div class="blocker" id="intro">
-            <button onclick="hideFunction()" style="position:fixed; top: 50%;">OPEN</button>
+            <button class="roundbutton" onclick="hideFunction()">OPEN </button>
     </div>
 
-    <div class="header" id="myHeader" style="font-family: 'photograph_signature'; font-size:36pt; color:#FDFFFC; line-height:0px;">
+    <div class="header" id="myHeader" style="font-family: 'photographsignature'; font-size:36pt; color:#FDFFFC; line-height:0px;">
         <p>Kiran's Crazy Coded Christmas Card</p>
     </div>
     <div class="footer">
@@ -226,7 +244,7 @@
         <img class="line" src="./img/line.png" style="width:90%">
     <div>
     <div>
-        <p></p>
+        <p style="font-family: 'metamorphousregular'; font-size:36pt; color:#FDFFFC;">blah blah blah blah blah blah blah blah blah blah</p>
     </div>
     <div style="text-align: center;">
         <img class="line" src="./img/line.png" style="width:90%">

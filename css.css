@@ -1,7 +1,16 @@
 @font-face {
-    font-family: 'photograph_signature';
+    font-family: 'photographsignature';
     src: url('./font/photographsignature-webfont.woff2') format('woff2'),
          url('./font/photographsignature-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'metamorphousregular';
+    src: url('./font/metamorphous-regular-webfont.woff2') format('woff2'),
+         url('./font/metamorphous-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
