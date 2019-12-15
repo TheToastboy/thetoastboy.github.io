@@ -34,9 +34,17 @@
           width: 100%;
         }
 
+        .sticky2 {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+        }
+
         .sticky + .content {
           padding-top: 102px;
         }
+
         .mySlides {display:none;}
     </style>
     <script>//chart properties
@@ -178,8 +186,25 @@
     <div class="header" id="myHeader">
         <h2>Kiran's Crazy Coded Christmas Card</h2>
     </div>
+    <div class="footer" id="tinyk">
+        <img src="/img/tinyk.png" style="width:100%">
+    </div>
     <script>//sticky header function
         window.onscroll = function() {stickyFunction()};
+
+        var footer = document.getElementById("tinyk");
+        var sticky = footer.offsetTop;
+
+        function stickyFunction() {
+          if (window.pageYOffset > sticky) {
+            footer.classList.add("sticky2");
+          } else {
+            footer.classList.remove("sticky2");
+          }
+        }
+    </script>
+    <script>//sticky header function
+        window.onscroll = function() {stickyBottomFunction()};
 
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
@@ -193,11 +218,11 @@
         }
     </script>
     <div class="w3-content w3-section">
-        <img class="mySlides" src="/img/slide1.jpg" style="width:100%">
-        <img class="mySlides" src="/img/slide2.jpg" style="width:100%">
-        <img class="mySlides" src="/img/slide3.jpg" style="width:100%">
-        <img class="mySlides" src="/img/slide4.jpg" style="width:100%">
-        <img class="mySlides" src="/img/slide5.jpg" style="width:100%">
+        <img class="mySlides" src="/img/slide1.png" style="width:100%">
+        <img class="mySlides" src="/img/slide2.png" style="width:100%">
+        <img class="mySlides" src="/img/slide3.png" style="width:100%">
+        <img class="mySlides" src="/img/slide4.png" style="width:100%">
+        <img class="mySlides" src="/img/slide5.png" style="width:100%">
     </div>
     <script>//slideshow script
         var myIndex = 0;
