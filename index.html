@@ -1,5 +1,270 @@
 <!DOCTYPE html>
 <html>
-        <title>2 Christmas card for you...</title>
-        <a href="mainpage.html">OPEN HERE</a>
+<head>
+    <meta charset="utf-8">
+    <title>Merry Christmas 15!</title>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        zing-grid[loading] {
+            height: 400px;
+        }
+
+        .header {
+          position: relative;
+          padding: 10px 16px;
+          background: #E71D36;
+          text-align: center;
+        }
+
+        .footer {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          text-align: right;
+        }
+
+        .content {
+          padding: 16px;
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .sticky + .content {
+          padding-top: 102px;
+        }
+
+        .mySlides {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .line{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blocker{
+            position: fixed;
+            background: #FDFFFC;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+    </style>
+    <script> // chart properties
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+        window.addEventListener('load', function() {
+            const daysConfig = {
+            type: 'calendar',
+            backgroundColor:'transparent',
+            options: {
+                year: {
+                    text: '2019',
+                    visible: true,
+                    fontSize: 72,
+                    fontColor: '#FDFFFC',
+                },
+                startMonth: 9,
+                endMonth: 12,
+                palette: ['none', '#26A195'],
+                month: {
+                    values: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], // Set the month labels.
+                    item: { // Use this object to style the month labels.
+                        fontColor: '#FDFFFC',
+                        fontSize: 30,
+                    },
+                    outline: { // Use this object to style the borders of active and inactive months.
+                      borderColor: 'white',
+                      borderWidth: 2,
+                      active: { // Use this object to style the borders of active months.
+                        borderColor: '#E71D36',
+                        borderWidth: 6
+                      }
+                  },
+                },
+                weekday: {
+                    values: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    item: {
+                        fontColor: 'white',
+                        fontSize: 24
+                    }
+                },
+                values: [
+                    ['2019-09-13', 2, 'Dinner at Vua near Dawson, ended up at my place,\nwatched Jurassic Park'],
+                    ['2019-09-15', 2, 'Brunch at Eggspectation, went to Fine Arts Museum,\nended up at my place'],
+                    ['2019-09-19', 2, 'Went to the pet store and Canadian Tire near Dawson,\nsomehow ended up at my place '],
+                    ['2019-09-21', 2, 'Went to your place, made dinner and cookies,\nwatched About A Boy'],
+                    ['2019-09-24', 2, 'Got lunch on campus at McGill, went to Indigo '],
+                    ['2019-09-26', 2, 'You showed up at my place unexpectedly to hang out'],
+                    ['2019-09-27', 2, 'Climate March followed by dinner at L’gros luxe, sleepover'],
+                    ['2019-09-28', 2, 'Made french toast for breakfast and then lunch at Yokato Yokabai'],
+                    ['2019-10-01', 2, 'Lunch on campus at McGill, went to Redpath Museum'],
+                    ['2019-10-03', 2, 'Came to my place, went through google photos'],
+                    ['2019-10-04', 2, 'Walked from McGill to my place, watched Over the Garden Wall,\nmade sandwiches, sleepover'],
+                    ['2019-10-05', 2, 'Made french toast and watched Adventure Time'],
+                    ['2019-10-10', 2, 'Some sort of sleepover. This one\'s lost to time.'],
+                    ['2019-10-11', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-10-13', 2, 'You came over around midnight after a party, slept over - \nthen went to parc Lafontaine and your house later in the day'],
+                    ['2019-10-14', 2, 'Canadian Thanksgiving with your family'],
+                    ['2019-10-16', 2, 'went to Dawson to do homework with you, went to the mall,\nlounged on couches in Canadian Tire'],
+                    ['2019-10-17', 2, 'Came to my place, ordered pasta,\nwatched Adventure Time, sleepover '],
+                    ['2019-10-18', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-10-19', 2, 'Went thrifting, came to my place,\nwent to my friend\'s birthday party, sleepover'],
+                    ['2019-10-20', 2, 'Went to your place, saw the dog, ate lunch'],
+                    ['2019-10-22', 2, 'Hung out at McGill, then at Dawson, ate brie and baguettes'],
+                    ['2019-10-24', 2, 'Hung out at my place, made meatballs, sleepover'],
+                    ['2019-10-25', 2, 'Your Halloween party at your house, sleepover'],
+                    ['2019-10-26', 2, 'Ate lunch at yours, walked around Westmount'],
+                    ['2019-10-27', 2, 'Did homework and ate dinner at your place'],
+                    ['2019-10-30', 2, 'Walked around the plateau and then did the\nstates presentation at my place'],
+                    ['2019-10-31', 2, 'Made pasta at my place, watched Tall Girl, ate popcorn, sleepover'],
+                    ['2019-11-01', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-11-02', 2, 'Went to the library, made chicken parm at my place,\nwatched ratatouille, sleepover'],
+                    ['2019-11-03', 2, 'Made pancakes for breakfast, went to the contemporary art museum,\nate lunch and dinner at your place'],
+                    ['2019-11-05', 2, 'Live drawing (of me) at your place, dinner, and studying'],
+                    ['2019-11-07', 2, 'Made pasta at my place, watched Adventure Time, sleepover'],
+                    ['2019-11-08', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-11-09', 2, 'Went to the library, ate greek food at Sparta Chicken,\nsleepover at mine'],
+                    ['2019-11-10', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-11-12', 2, 'Ate dinner at your place, watched an Iranian vampire movie'],
+                    ['2019-11-13', 2, 'You came to my place unexpectedly,\nwe ate pasta and hot chocolate'],
+                    ['2019-11-15', 2, 'My birthday party (at Rob’s place), sleepover at mine'],
+                    ['2019-11-16', 2, 'Slept in, went Cafe Santropol for lunch\nand then botanical gardens, library'],
+                    ['2019-11-20', 2, 'I came to Dawson for a quick dinner'],
+                    ['2019-11-21', 2, 'Came to my place, made Fancy butter pasta,\nwatched Arrival, sleepover'],
+                    ['2019-11-22', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-11-23', 2, 'Went to the library, made breaded chicken at my place,\nwatched The Holy Mountain, sleepover'],
+                    ['2019-11-24', 2, 'Woke up, made french toast, took a nap'],
+                    ['2019-11-25', 2, 'I came to Dawson to hang out real quick,\ncoffee date at Starbucks'],
+                    ['2019-11-26', 2, 'Popped over to Dawson for a quick dinner, went to Canadian Tire'],
+                    ['2019-11-28', 2, 'Met up at my place, thanksgiving dinner with my parents\nat L’Academie, watched Song of the Sea, sleepover '],
+                    ['2019-11-29', 2, 'Woke up, made pancakes, hung out'],
+                    ['2019-11-30', 2, 'Went to the library, then your place, made stir-fry,\nwatched Captain Fantastic & ate chocolates,\nlooked at old drawings/photos, sleepover'],
+                    ['2019-12-01', 2, 'Slept in, ate cheesy bagels, read books, hung out'],
+                    ['2019-12-02', 2, 'Went to Dawson to hang out while you did homework'],
+                    ['2019-12-03', 2, 'Went to Dawson, ate greek food, hung out while you worked for a while'],
+                    ['2019-12-04', 2, 'Went to Dawson, got some pizza, played some sporcle'],
+                    ['2019-12-05', 2, 'Came to my place, made pasta, watched Netflix, sleepover'],
+                    ['2019-12-06', 2, 'Dinner with your grandparents, sleepover at your place'],
+                    ['2019-12-07', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-12-08', 2, 'At your place, ate homemade pizza, then hung out & studied together'],
+                    ['2019-12-09', 2, 'Came to mine, made chicken parm then watched Bob Burger\nand ate chocolate chip cookies, sleepover'],
+                    ['2019-12-10', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                    ['2019-12-12', 2, 'Made chicken souvlaki at my place, watched Awakenings, sleepover'],
+                    ['2019-12-13', 2, 'Slept in, made buttermilk pancakes, got dinner at Vua,\nsaw Queen & Slim at the theater, went back to your place, sleepover'],
+                    ['2019-12-14', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
+                ]
+            },
+                tooltip: { // Use this object to to configure the tooltips.
+                        text: '%data-day\n%data-info0',
+                        alpha: 1,
+                        backgroundColor: '#FDFFFC',
+                        borderAlpha: 1,
+                        borderColor: '#E71D36',
+                        borderRadius: 10,
+                        borderWidth: 2,
+                        callout: true,
+                        fontColor: '#2EC4B6',
+                        fontSize: 30,
+                        offsetY: -10,
+                        align: 'center',
+                        textAlpha: 1
+                    },
+                plotarea: {
+                    backgroundColor:'transparent',
+                    marginTop: '15%',
+                }
+            };
+            zingchart.render({
+                id: 'myChart',
+                data: daysConfig,
+                height: 500,
+                width: 1200
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color:#011627;">
+    <div class="blocker" id="intro">
+            <button onclick="hideFunction()" style="position:fixed; top: 50%;">Click Me</button>
+    </div>
+    <script>//hide intro function
+        function hideFunction() {
+            var x = document.getElementById("intro");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <div class="header" id="myHeader" style="font-family: 'photograph_signature';">
+        <h2 style="fontColor:'#FDFFFC';">Kiran's Crazy Coded Christmas Card</h2>
+    </div>
+    <div class="footer">
+        <img src="/img/tinyk.png" style="width:20%">
+    </div>
+    <script>//sticky header function
+        window.onscroll = function() {stickyFunction()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function stickyFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+    <div class="w3-content w3-section" style="text-align: center;">
+        <img class="mySlides" src="/img/slide1.png" style="width:75%">
+        <img class="mySlides" src="/img/slide2.png" style="width:75%">
+        <img class="mySlides" src="/img/slide3.png" style="width:75%">
+        <img class="mySlides" src="/img/slide4.png" style="width:75%">
+        <img class="mySlides" src="/img/slide5.png" style="width:75%">
+    </div>
+    <div class="w3-content w3-section" style="text-align: center;">
+        <img class="line" src="/img/line.png" style="height:45%">
+    <div>
+    <script>//slideshow script
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 7500); // Change image every 2 seconds
+        }
+    </script>
+    <div id='myChart'></div>
+
+</body>
+
 </html>
