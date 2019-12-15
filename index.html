@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Merry Christmas 4!</title>
+    <title>Merry Christmas 5!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,8 +25,10 @@
         }
 
         .footer {
-          padding: 10px 16px;
-          text-align: center;
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          width: 100%;
         }
 
         .content {
@@ -39,14 +41,7 @@
           width: 100%;
         }
 
-        .sticky2 {
-          position: fixed;
-          bottom: 0;
-          right: 0;
-          width: 100%;
-        }
-
-        .sticky + .sticky2 + .content {
+        .sticky + .content {
           padding-top: 102px;
         }
 
@@ -191,8 +186,8 @@
     <div class="header" id="myHeader">
         <h2>Kiran's Crazy Coded Christmas Card</h2>
     </div>
-    <div class="footer" id="tinyk">
-        <img src="/img/tinyk.png" style="width:50%">
+    <div class="footer">
+        <img src="/img/tinyk.png" style="width:30%">
     </div>
     <script>//sticky header function
         window.onscroll = function() {stickyFunction()};
@@ -205,20 +200,6 @@
             header.classList.add("sticky");
           } else {
             header.classList.remove("sticky");
-          }
-        }
-    </script>
-    <script>//sticky footer function
-        window.onscroll = function() {stickyBottomFunction()};
-
-        var footer = document.getElementById("tinyk");
-        var sticky2 = footer.offsetBottom;
-
-        function stickyBottomFunction() {
-          if (window.pageYOffset > sticky2) {
-            footer.classList.add("sticky2");
-          } else {
-            footer.classList.remove("sticky2");
           }
         }
     </script>
