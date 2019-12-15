@@ -8,14 +8,12 @@
             height: 400px;
         }
     </style>
-</head>
-
-<body>
-    <div id='myChart'></div>
     <script>
         ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
-        var myConfig = {
+        window.addEventListener('load', function() {
+            const daysConfig = {
             type: 'calendar',
+            backgroundColor:'transparent',
             options: {
                 year: {
                     text: '2019',
@@ -115,39 +113,46 @@
                 ]
             },
 
-            tooltip: { // Use this object to to configure the tooltips.
-                    text: '%data-day\n%data-info0',
-                    alpha: 1,
-                    backgroundColor: 'white',
-                    borderAlpha: 1,
-                    borderColor: '#006666',
-                    borderRadius: 10,
-                    borderWidth: 2,
-                    callout: true,
-                    fontColor: '#0099ff',
-                    fontSize: 30,
-                    offsetY: -10,
-                    align: 'center',
-                    textAlpha: 1
-                },
+                tooltip: { // Use this object to to configure the tooltips.
+                        text: '%data-day\n%data-info0',
+                        alpha: 1,
+                        backgroundColor: 'white',
+                        borderAlpha: 1,
+                        borderColor: '#006666',
+                        borderRadius: 10,
+                        borderWidth: 2,
+                        callout: true,
+                        fontColor: '#0099ff',
+                        fontSize: 30,
+                        offsetY: -10,
+                        align: 'center',
+                        textAlpha: 1
+                    },
 
-            plotarea: {
-                marginTop: '15%',
-                marginBottom: '55%',
-                marginLeft: '8%',
-                marginRight: '8%'
-            }
-        };
-
-        zingchart.loadModules('calendar', function() {
+                plotarea: {
+                    backgroundColor:'transparent',
+                    marginTop: '15%',
+                    marginBottom: '55%',
+                    marginLeft: '8%',
+                    marginRight: '8%'
+                }
+            };
             zingchart.render({
                 id: 'myChart',
-                data: myConfig,
+                data: daysConfig,
                 height: 1500,
                 width: 1500
             });
         });
     </script>
+</head>
+
+<body style="background-color:#1C201C; float:left;">
+    <p>heyo</p>
+      <h1>Products</h1>
+    <p>We have developed more than 10 products till now.</p>
+    <div id='myChart'></div>
+
 </body>
 
 </html>
