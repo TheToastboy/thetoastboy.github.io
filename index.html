@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Merry Christmas 25!</title>
+    <title>Merry Christmas 26!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
@@ -62,15 +62,16 @@
         .roundbutton{
             position:fixed;
             background-color: transparent;
-            border: 2px solid #E71D36;
-            top: 30%;
-            left: 40%;
-            font-family: 'metamorphousregular';
-            font-size:36pt;
-            color:'black';
+            top:27%;
+            left:40%;
+            border: transparent;
             border-radius: 100%;
-            width: 300px;
-            height: 300px;
+            width: 20%;
+            height: 40%;
+        }
+
+        .noScroll{
+            overflow: hidden;
         }
     </style>
     <script> // chart properties
@@ -222,52 +223,57 @@
 
 </head>
 
-<body style="background-color:#011627;">
-    <div class="blocker" id="intro">
-            <img src="./img/seal.png" style="width:100%"></img>
-            <button class="roundbutton" onclick="hideFunction()">OPEN </button>
-    </div>
+<body style="background-color:#011627;" id="body" class="noScroll">
+    <div style="position:absolute; top:0; left:0;">
+        <div class="blocker" id="intro">
+                <img src="./img/seal.png" style="width:100%; height:100%; object-fit: cover;"></img>
+                <button class="roundbutton" onclick="hideFunction(); carousel(); removeScrollLock()"></button>
+        </div>
 
-    <div class="header" id="myHeader" style="font-family: 'photographsignature'; font-size:36pt; color:#FDFFFC; line-height:0px;">
-        <p>Kiran's Crazy Coded Christmas Card</p>
+        <div class="header" id="myHeader" style="font-family: 'photographsignature'; font-size:30pt; color:#FDFFFC; line-height:0px;">
+            <p>Kiran's Crazy Coded Christmas Card</p>
+        </div>
+        <div class="footer">
+            <img src="./img/tinyk.png" style="width:20%">
+        </div>
+        <div style="text-align: center; padding-top:100px;">
+            <img class="mySlides" src="./img/slide1.png" style="width:40%">
+            <img class="mySlides" src="./img/slide2.png" style="width:40%">
+            <img class="mySlides" src="./img/slide3.png" style="width:40%">
+            <img class="mySlides" src="./img/slide4.png" style="width:40%">
+            <img class="mySlides" src="./img/slide5.png" style="width:40%">
+        </div>
+        <div style="text-align: center;">
+            <img class="line" src="./img/line.png" style="width:90%">
+        <div>
+        <div>
+            <p style="font-family: 'metamorphousregular'; font-size:36pt; color:#FDFFFC;">blah blah blah blah blah blah blah blah blah blah</p>
+        </div>
+        <div style="text-align: center;">
+            <img class="line" src="./img/line.png" style="width:90%">
+        <div>
+        <script>//slideshow script
+            var myIndex = 0;
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 6500); // Change image every 2 seconds
+            }
+        </script>
+        <script>
+            function removeScrollLock() {
+                var element = document.getElementById("body");
+                element.classList.remove("noScroll");
+            }
+        </script>
+        <div id='myChart'></div>
     </div>
-    <div class="footer">
-        <img src="./img/tinyk.png" style="width:20%">
-    </div>
-    <div style="text-align: center; padding-top:100px;">
-        <img class="mySlides" src="./img/slide1.png" style="width:50%">
-        <img class="mySlides" src="./img/slide2.png" style="width:50%">
-        <img class="mySlides" src="./img/slide3.png" style="width:50%">
-        <img class="mySlides" src="./img/slide4.png" style="width:50%">
-        <img class="mySlides" src="./img/slide5.png" style="width:50%">
-    </div>
-    <div style="text-align: center;">
-        <img class="line" src="./img/line.png" style="width:90%">
-    <div>
-    <div>
-        <p style="font-family: 'metamorphousregular'; font-size:36pt; color:#FDFFFC;">blah blah blah blah blah blah blah blah blah blah</p>
-    </div>
-    <div style="text-align: center;">
-        <img class="line" src="./img/line.png" style="width:90%">
-    <div>
-    <script>//slideshow script
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}
-          x[myIndex-1].style.display = "block";
-          setTimeout(carousel, 7500); // Change image every 2 seconds
-        }
-    </script>
-    <div id='myChart'></div>
-
 </body>
 
 </html>
