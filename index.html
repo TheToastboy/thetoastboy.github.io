@@ -203,13 +203,13 @@
           }
         }
     </script>
-    <script>//sticky header function
+    <script>//sticky footer function
         window.onscroll = function() {stickyBottomFunction()};
 
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
 
-        function stickyFunction() {
+        function stickyBottomFunction() {
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
           } else {
