@@ -2,20 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <title>Merry Christmas!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css.css">
     <style>
         zing-grid[loading] {
             height: 400px;
         }
     </style>
-    <script>
+    <style>
+        .mySlides {display:none;}
+    </style>
+    <script>//chart properties
         ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
         window.addEventListener('load', function() {
             const daysConfig = {
@@ -119,7 +125,6 @@
                     ['2019-12-14', 1, 'Saw each other briefly, but not <i>technically</i> a date'],
                 ]
             },
-
                 tooltip: { // Use this object to to configure the tooltips.
                         text: '%data-day\n%data-info0',
                         alpha: 1,
@@ -135,7 +140,6 @@
                         align: 'center',
                         textAlpha: 1
                     },
-
                 plotarea: {
                     backgroundColor:'transparent',
                     marginTop: '15%',
@@ -149,12 +153,31 @@
             });
         });
     </script>
+
 </head>
 
-<body style="background-color:#1C201C; float:left;">
-    <p>heyo</p>
-      <h1>Products</h1>
-    <p>We have developed more than 10 products till now.</p>
+<body style="background-color:#1C201C;">
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="icon.jpg" style="width:100%">
+        <img class="mySlides" src="meme.jpg" style="width:100%">
+        <img class="mySlides" src="concept.jpg" style="width:100%">
+    </div>
+    <script>//slideshow script
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
     <div id='myChart'></div>
 
 </body>
