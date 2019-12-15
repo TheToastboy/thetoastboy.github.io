@@ -17,12 +17,6 @@
         zing-grid[loading] {
             height: 400px;
         }
-        .top-container {
-          background-color: #f1f1f1;
-          padding: 30px;
-          text-align: center;
-        }
-
         .header {
           padding: 10px 16px;
           background: #555;
@@ -180,20 +174,16 @@
 </head>
 
 <body style="background-color:#1C201C;">
-    <div class="top-container">
-        <h1>Scroll Down</h1>
-        <p>Scroll down to see the sticky effect.</p>
-    </div>
     <div class="header" id="myHeader">
         <h2>My Header</h2>
     </div>
     <script>//sticky header function
-        window.onscroll = function() {myFunction()};
+        window.onscroll = function() {stickyFunction()};
 
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
 
-        function myFunction() {
+        function stickyFunction() {
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
           } else {
