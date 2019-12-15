@@ -186,34 +186,35 @@
     <div class="header" id="myHeader">
         <h2>Kiran's Crazy Coded Christmas Card</h2>
     </div>
-    <div class="footer" id="tinyk">
-        <img src="/img/tinyk.png" style="width:100%">
-    </div>
     <script>//sticky header function
         window.onscroll = function() {stickyFunction()};
-
-        var footer = document.getElementById("tinyk");
-        var sticky = footer.offsetTop;
-
-        function stickyFunction() {
-          if (window.pageYOffset > sticky) {
-            footer.classList.add("sticky2");
-          } else {
-            footer.classList.remove("sticky2");
-          }
-        }
-    </script>
-    <script>//sticky footer function
-        window.onscroll = function() {stickyBottomFunction()};
 
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
 
-        function stickyBottomFunction() {
+        function stickyFunction() {
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
           } else {
             header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <div class="footer" id="tinyk">
+        <img src="/img/tinyk.png" style="width:100%">
+    </div>
+    <script>//sticky footer function
+        window.onscroll = function() {stickyBottomFunction()};
+
+        var footer = document.getElementById("tinyk");
+        var sticky2 = footer.offsetBottom;
+
+        function stickyBottomFunction() {
+          if (window.pageYOffset > sticky2) {
+            footer.classList.add("sticky2");
+          } else {
+            footer.classList.remove("sticky2");
           }
         }
     </script>
