@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Merry Christmas 26!</title>
+    <title>Merry Christmas 27!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
@@ -36,6 +36,7 @@
           position: fixed;
           top: 0;
           width: 100%;
+          border-radius: 0px 0px 20px 20px;
         }
 
         .footer {
@@ -49,6 +50,8 @@
             display:block;
             margin-left: auto;
             margin-right: auto;
+            width:40%;
+            float:left;
         }
 
         .line{
@@ -73,6 +76,14 @@
         .noScroll{
             overflow: hidden;
         }
+
+        .row {
+          padding-top: 100px;
+          column-count: 4;
+          column-width: 25%;
+          column-fill: balance;
+        }
+
     </style>
     <script> // chart properties
         ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
@@ -229,29 +240,37 @@
                 <img src="./img/seal.png" style="width:100%; height:100%; object-fit: cover;"></img>
                 <button class="roundbutton" onclick="hideFunction(); carousel(); removeScrollLock()"></button>
         </div>
-
         <div class="header" id="myHeader" style="font-family: 'photographsignature'; font-size:30pt; color:#FDFFFC; line-height:0px;">
             <p>Kiran's Crazy Coded Christmas Card</p>
         </div>
         <div class="footer">
             <img src="./img/tinyk.png" style="width:20%">
         </div>
-        <div style="text-align: center; padding-top:100px;">
-            <img class="mySlides" src="./img/slide1.png" style="width:40%">
-            <img class="mySlides" src="./img/slide2.png" style="width:40%">
-            <img class="mySlides" src="./img/slide3.png" style="width:40%">
-            <img class="mySlides" src="./img/slide4.png" style="width:40%">
-            <img class="mySlides" src="./img/slide5.png" style="width:40%">
+
+        <img src="./img/hollyleft.png" style="width:20%; float: left;">
+        <div class="slideshow" style="column-span: 2; text-align: center;">
+            <img class="mySlides" src="./img/slide1.png">
+            <img class="mySlides" src="./img/slide2.png">
+            <img class="mySlides" src="./img/slide3.png">
+            <img class="mySlides" src="./img/slide4.png">
+            <img class="mySlides" src="./img/slide5.png">
         </div>
+        <img src="./img/hollyright.png" style="width:20%; float: left;">
+        <p style="clear: both;"></p>
+
         <div style="text-align: center;">
             <img class="line" src="./img/line.png" style="width:90%">
         <div>
+
         <div>
-            <p style="font-family: 'metamorphousregular'; font-size:36pt; color:#FDFFFC;">blah blah blah blah blah blah blah blah blah blah</p>
+            <p style="font-family: 'metamorphousregular'; font-size:36pt; color:#FDFFFC;"> blah blah blah blah blah<br>blah blah blah blah blah </p>
         </div>
+
         <div style="text-align: center;">
             <img class="line" src="./img/line.png" style="width:90%">
         <div>
+
+
         <script>//slideshow script
             var myIndex = 0;
             function carousel() {
