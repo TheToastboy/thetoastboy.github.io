@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Merry Christmas 28!</title>
+    <title>Merry Christmas 29!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
@@ -87,12 +87,23 @@
             type: 'calendar',
             backgroundColor:'transparent',
             options: {
+                firstday: 'm',
+                day: { // Configure the styling by day.
+                   items: { // Use this object to style the cells by individual calendar day.
+                       'd-2019-09-06': {
+                           backgroundColor: '#ff9f1c',
+                       },
+                       'd-2019-12-19': {
+                           backgroundColor: '#ff9f1c',
+                       },
+                   },
+               },
                 year: {
                     text: '2019',
                     visible: true,
                     fontSize: 72,
                     fontColor: '#FDFFFC',
-                    fontFamily: 'metamorphousregular'
+                    fontFamily: 'metamorphous'
                 },
                 startMonth: 9,
                 endMonth: 12,
@@ -102,7 +113,7 @@
                     item: { // Use this object to style the month labels.
                         fontColor: '#FDFFFC',
                         fontSize: 45,
-                        fontFamily: 'photographsignature',
+                        fontFamily: 'photograph',
                     },
                     outline: { // Use this object to style the borders of active and inactive months.
                       borderColor: 'white',
@@ -118,10 +129,11 @@
                     item: {
                         fontColor: 'white',
                         fontSize: 24,
-                        fontFamily: 'metamorphousregular',
+                        fontFamily: 'metamorphous',
                     }
                 },
                 values: [
+                    ['2019-09-06', 2, 'We match on Tinder'],
                     ['2019-09-13', 2, 'Dinner at Vua near Dawson, ended up at my place,\nwatched Jurassic Park'],
                     ['2019-09-15', 2, 'Brunch at Eggspectation, went to Fine Arts Museum,\nended up at my place'],
                     ['2019-09-19', 2, 'Went to the pet store and Canadian Tire near Dawson,\nsomehow ended up at my place '],
@@ -188,6 +200,7 @@
                     ['2019-12-16', 2, 'Hung out at your place - later, fancy dinner at Cadet, sleepover'],
                     ['2019-12-17', 2, 'Borrowed the car to drive to SkyZone - later, made ravioli and hung out'],
                     ['2019-12-18', 2, 'Went to your place after your wisdom teeth surgery,\nate a lot of food and watched the Hunger Games'],
+                    ['2019-12-19', 2, 'I fly back to Philadelphia'],
                 ]
             },
                 tooltip: { // Use this object to to configure the tooltips.
@@ -199,7 +212,7 @@
                         borderRadius: 10,
                         borderWidth: 2,
                         callout: true,
-                        fontFamily: 'metamorphousregular',
+                        fontFamily: 'metamorphous',
                         fontColor: '#2EC4B6',
                         fontSize: 20,
                         offsetY: -10,
@@ -236,7 +249,7 @@
                 <img src="./img/seal.png" alt="if this image isn't showing up, something's gone wrong" style="width:100%; height:100%; object-fit: cover;">
                 <button class="roundbutton" onclick="hideFunction(); carousel(); removeScrollLock()"></button>
         </div>
-        <div class="header" id="myHeader" style="font-family: 'photographsignature'; font-size:5vh; color:#FDFFFC; line-height:0px;">
+        <div class="header" id="myHeader" style="font-family: 'aguafina'; font-size:5vh; color:#FDFFFC; line-height:0px;">
             <p>Kiran's Crazy Coded Christmas Card</p>
         </div>
         <div class="footer">
@@ -260,7 +273,7 @@
 
         <img class="line centered" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 2%; padding-bottom: 0%;">
 
-        <div style="font-family: 'metamorphousregular';  color:#FDFFFC; text-align: center; margin-left:-4%;">
+        <div style="font-family: 'metamorphous';  color:#FDFFFC; text-align: center; margin-left:-4%;">
             <p style="font-size: 4vw">Merry Christmas, Muriel!</p>
             <p style="font-size: 2vw">more text goes here</p>
         </div>
