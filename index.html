@@ -17,6 +17,13 @@
             height: 400px;
         }
 
+        body{
+            background-image: url("./img/tile.png");
+            background-repeat: repeat;
+            background-color: #001627;
+            background-size: 30vw;
+        }
+
         .blocker{
             position: fixed;
             background: #FDFFFC;
@@ -320,12 +327,14 @@
     </script>
 </head>
 
-<body style="background-color:#011627;" id="body" class="noScroll">
+<body id="body" class="noScroll">
     <div style="position:absolute; top:0; left:0;">
+
         <div class="blocker" id="intro">
                 <img src="./img/seal.png" alt="if this image isn't showing up, something's gone wrong" style="width:100%; height:100%; object-fit: cover;">
                 <button class="roundbutton" onclick="hideFunction(); carousel(); removeScrollLock()"></button>
         </div>
+
         <div class="header" id="myHeader" style="font-family: 'aguafina'; font-size:5vh; color:#FDFFFC; line-height:0px;">
             <p>Kiran's Crazy Coded Christmas Card</p>
         </div>
@@ -347,7 +356,7 @@
 
         <div style="font-family: 'metamorphous'; text-align: center; padding: 0vh 5vw 0vh 5vw;">
             <p style="font-size: 4vw; color:#FF9F1C">Merry Christmas, Muriel!</p>
-            <p style="font-size: 2vw; color:#FDFFFC;">If you're reading this, that means it's Christmas, which also means we've been together for well over one hundred days. Isn't that insane?<br><br>Since you're the Artist, I thought I'd play to <i>my</i> strengths when making your card: so I designed, photoshopped, hosted, and coded this website from scratch. I know it's not a "tradtional" card, but I hope you like it - think of it as a celebration of our first year together.<br><br>Here's to so many more, mon cœur. See you soon.</p>
+            <p style="font-size: 2vw; color:#FDFFFC;">If you're reading this, that means it's Christmas, which also means we've been together for well over one <i>hundred</i> days. Isn't that insane?<br><br>Since you're the Artist, I thought I'd play to my strengths when making your card: so I designed, photoshopped, hosted, and coded this website from scratch. I know it's not a "tradtional" card, but I hope you like it - think of it as a celebration of our first year together.<br><br>Here's to many more, mon cœur. See you soon.</p>
         </div>
 
         <div style="font-family: 'metamorphous'; text-align: left; padding-left: 5vw">
