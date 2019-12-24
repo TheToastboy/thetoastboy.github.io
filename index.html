@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Merry Christmas 30!</title>
+    <title>Merry Christmas!</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
@@ -48,11 +48,11 @@
         }
 
         .mySlides {
-            display:block;
-            margin-left: auto;
-            margin-right: auto;
-            width:40%;
+            position: relative;
+            display: inline-block;
+            width: 40vw;
             float:left;
+            padding: 0vh 3.5vw 0vh 3.5vw;
         }
 
         .line{
@@ -61,9 +61,10 @@
             position: relative;
             top: 50%;
             left: 50%;
-            transform: translate(-52%,0%);
+            transform: translate(-50%,0%);
             z-index: -1;
         }
+
 
         .roundbutton{
             position:fixed;
@@ -90,7 +91,6 @@
           display: inline-block;
           background: #2ec4b6;
           color: #011627;
-          min-width: 2.6rem;
           margin-left: 1vw;
           border-radius: 10px 0 0 10px;
           font-size: 4.5vw;
@@ -119,7 +119,7 @@
           }
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}
-          x[myIndex-1].style.display = "block";
+          x[myIndex-1].style.display = "inline";
           setTimeout(carousel, 6500); // Change image every 2 seconds
         }
     </script>
@@ -177,7 +177,7 @@
                     }
                 },
                 values: [
-                    ['2019-09-06', 2, 'We match on Tinder'],
+                    ['2019-09-06', 2, 'We matched on Tinder'],
                     ['2019-09-13', 2, 'Dinner at Vua near Dawson, ended up at my place,\nwatched Jurassic Park'],
                     ['2019-09-15', 2, 'Brunch at Eggspectation, went to Fine Arts Museum,\nended up at my place'],
                     ['2019-09-19', 2, 'Went to the pet store and Canadian Tire near Dawson,\nsomehow ended up at my place '],
@@ -244,7 +244,7 @@
                     ['2019-12-16', 2, 'Hung out at your place - later, fancy dinner at Cadet, sleepover'],
                     ['2019-12-17', 2, 'Borrowed the car to drive to SkyZone - later, made ravioli and hung out'],
                     ['2019-12-18', 2, 'Went to your place after your wisdom teeth surgery,\nate a lot of food and watched the Hunger Games'],
-                    ['2019-12-19', 2, 'I fly back to Philadelphia'],
+                    ['2019-12-19', 2, 'I flew back to Philadelphia'],
                 ]
             },
                 tooltip: { // Use this object to to configure the tooltips.
@@ -327,39 +327,43 @@
                 <button class="roundbutton" onclick="hideFunction(); carousel(); removeScrollLock()"></button>
         </div>
         <div class="header" id="myHeader" style="font-family: 'aguafina'; font-size:5vh; color:#FDFFFC; line-height:0px;">
-            <p>Kiran's Crazy Coded Christmas Card</p>
+            <p>Kiran's Crazy Creative Coded Christmas Card</p>
         </div>
         <div class="footer">
             <img src="./img/tinyk.png" alt="if this image isn't showing up, something's gone wrong" style="width:20%">
         </div>
 
-        <div style="display:block; margin-left:5vw; padding-top:12vh;">
-            <img src="./img/hollyleft.png" alt="if this image isn't showing up, something's gone wrong" style="width:20vw; float: left; padding-right:5vw; padding-top:10%;">
-            <div class="slideshow" style="text-align: center; width:100vw">
-                <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide1.png">
-                <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide2.png">
-                <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide3.png">
-                <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide4.png">
-                <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide5.png">
-            </div>
-            <img src="./img/hollyright.png" alt="if this image isn't showing up, something's gone wrong" style="width:20vw; float: left; padding-left:5vw; padding-top:10%;">
+        <div style="padding-top:12vh; text-align:center; display:flex; justify-content:center; align-items:center;">
+            <img src="./img/hollyleft.png" alt="if this image isn't showing up, something's gone wrong" style="width:22%; position:relative; display: inline-block; float:left; padding:10px;">
+            <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide1.png">
+            <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide2.png">
+            <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide3.png">
+            <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide4.png">
+            <img class="mySlides" alt="if this image isn't showing up, something's gone wrong" src="./img/slide5.png">
+            <img src="./img/hollyright.png" alt="if this image isn't showing up, something's gone wrong" style="width:22%; position:relative; display: inline-block; float:left; padding:10px;">
         </div>
 
         <p style="clear: both;"></p>
 
 
-        <img class="line" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 2%; padding-bottom: 0%;">
+        <img class="line" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 1%; padding-bottom: 0%;">
 
-        <div style="font-family: 'metamorphous'; text-align: center; margin-left:-4%;">
+        <div style="font-family: 'metamorphous'; text-align: center;">
             <p style="font-size: 4vw; color:#FF9F1C">Merry Christmas, Muriel!</p>
-            <p style="font-size: 2vw; color:#FDFFFC;">If you're reading this, that means it's Christmas, </p>
+            <p style="font-size: 2vw; color:#FDFFFC;">If you're reading this, that means it's Christmas, which also means we've <br> been together for well over one hundred days. Isn't that insane?<br><br>Since you're the Artist, I thought I'd play to <i>my</i> strengths when making your card:<br>so I designed, photoshopped, hosted, and coded this website from scratch.<br>I know it's not a "tradtional" card, but I hope you like it - think of it<br>as a celebration of our first year together.<br><br>Here's to so many more, mon cœur.</p>
         </div>
 
-        <img class="line" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 0%; padding-bottom: 2%;">
+        <div style="font-family: 'metamorphous'; text-align: left; padding-left: 5vw">
+            <p style="font-size: 2vw; color:#FF9F1C;">See you very soon,<p>
+        </div>
+
+        <img src="./img/signature.png" alt="if this image isn't showing up, something's gone wrong" style="width:50vw; padding-left:10vw; margin-top:-3vw">
+
+        <img class="line" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 1%; padding-bottom: 2%;">
 
         <div id='myChart' style="width:90vw; position: relative; z-index: 2;"></div>
 
-        <div class="countup" id="countup1" style="transform: translate(-3.5%,0%);">
+        <div class="countup" id="countup1">
               <span class="timeel days">00</span>
               <span class="timeel timeRefDays">days</span>
               <span class="timeel hours">00</span>
@@ -369,11 +373,12 @@
               <span class="timeel seconds">00</span>
               <span class="timeel timeRefSeconds">seconds</span>
         </div>
-        <div style="font-family: 'metamorphous'; text-align: center; margin-left:-4%;">
-            <p style="font-size: 3vw; color:#FDFFFC">since our first date</p>
+
+        <div style="font-family: 'metamorphous'; text-align: center;">
+            <p style="font-size: 3vw; color:#FDFFFC; margin-top:-1vw;">since our first date</p>
         </div>
 
-        <img class="line" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 2%; padding-bottom: 0%;">
+        <img class="line" src="./img/line.png" alt="if this image isn't showing up, something's gone wrong" style="padding-top: 0%; padding-bottom: 2%;">
     </div>
 </body>
 
